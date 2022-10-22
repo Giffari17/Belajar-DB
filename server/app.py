@@ -2,6 +2,7 @@ from crypt import methods
 from distutils.log import debug
 import json
 from flask import Flask, request
+from helpers import *
 
 app = Flask(__name__)
 
@@ -12,21 +13,7 @@ def get_users():
     Do the select query to database
     Close connection when already used db
     '''
-
-    data = [
-        {
-            "name": "udin",
-            "address": "sleman"
-        },
-        {
-            "name": "udin2",
-            "address": "kaliurang"
-        },
-        {
-            "name": "udin3",
-            "address": "monjali"
-        }
-    ]
+    data = query_get_users()
     response = app.response_class(
         response=json.dumps(data),
         status=200,
@@ -42,10 +29,7 @@ def get_user_by_id(id):
     Close connection when already used db
     '''
 
-    data = {
-            "name": "udin",
-            "address": "sleman"
-        }
+    data = query_get_user_by_id(id)
     response = app.response_class(
         response=json.dumps(data),
         status=200,
@@ -83,6 +67,7 @@ def register_user():
         )
         return response
     
+    query_post_user(data)
     # Response and status for success request
     response = app.response_class(
             response=json.dumps(response),
@@ -91,8 +76,8 @@ def register_user():
         )
     return response
 
-@app.route('/users', methods=['PUT'])
-def edit_user():
+@app.route('/users/<int:id>', methods=['PUT'])
+def edit_user(id):
     '''
     Connect to db
     Do the select query to database
@@ -105,8 +90,7 @@ def edit_user():
     }
     status = 200
 
-    # Get request
-    data = request.get_json()
+    query_edit_user_by_id(id)
     
     # Response and status for success request
     response = app.response_class(
@@ -116,8 +100,8 @@ def edit_user():
         )
     return response
 
-@app.route('/users', methods=['PATCH'])
-def edit_user_by_field():
+@app.route('/users/<int:id>', methods=['PATCH'])
+def edit_user_by_field(id):
     '''
     Connect to db
     Do the select query to database
@@ -130,8 +114,7 @@ def edit_user_by_field():
     }
     status = 200
 
-    # Get request
-    data = request.get_json()
+    query_patch_user_by_id(id)
     
     # Response and status for success request
     response = app.response_class(
@@ -141,8 +124,8 @@ def edit_user_by_field():
         )
     return response
 
-@app.route('/users', methods=['DELETE'])
-def delete_user():
+@app.route('/users/<int:id>', methods=['DELETE'])
+def delete_user(id):
     '''
     Connect to db
     Do the select query to database
@@ -154,6 +137,8 @@ def delete_user():
         "description": "user has been deleted successfully"
     }
     status = 200
+
+    query_delete_user_by_id(id)
     
     # Response and status for success request
     response = app.response_class(
