@@ -2,9 +2,11 @@ from crypt import methods
 from distutils.log import debug
 import json
 from flask import Flask, request
+from flask_cors import CORS
 from helpers import *
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/users')
 def get_users():
@@ -14,6 +16,7 @@ def get_users():
     Close connection when already used db
     '''
     data = query_get_users()
+    data = raw_data_to_json(data)
     response = app.response_class(
         response=json.dumps(data),
         status=200,
@@ -30,6 +33,7 @@ def get_user_by_id(id):
     '''
 
     data = query_get_user_by_id(id)
+    data = raw_data_to_json(data)[0]
     response = app.response_class(
         response=json.dumps(data),
         status=200,

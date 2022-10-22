@@ -1,5 +1,18 @@
 from db import open_db_connection
 
+def raw_data_to_json(data):
+    parsed_data = []
+    for value in data: 
+        json = {}
+        id, name, address = value
+        print(id, name, address)
+        json["id"] = id
+        json["name"] = name
+        json["address"] = address
+        parsed_data.append(json)
+        
+    return parsed_data
+
 def query_get_users():
     db = open_db_connection()
     cursor = db.cursor()
