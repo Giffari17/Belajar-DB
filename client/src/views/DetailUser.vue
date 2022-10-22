@@ -4,22 +4,21 @@
         <h1>Profile data user {{ userId }}</h1>
         <div class="profile-data-row">
             <p style="margin-right: 10px;">Name:</p>
-            <p>{{ name }}</p>
+            <p>{{ user.name }}</p>
         </div>
         <div class="profile-data-row">
             <p style="margin-right: 10px;">Address:</p>
-            <p>{{ address }}</p>
+            <p>{{ user.address }}</p>
         </div>
     </div>
 </template>
 
 <script>
+import httpClient from '@/api/api'
 export default {
   data () {
     return {
-      id: 1,
-      name: 'Udin',
-      address: 'Sleman'
+      user: {}
     }
   },
   computed: {
@@ -31,6 +30,15 @@ export default {
     goBackHome () {
       this.$router.push('/users')
     }
+  },
+  created () {
+    httpClient(`/users/${this.userId}`)
+      .then(({ data }) => {
+        this.user = data
+      })
+      .catch(_ => {
+        console.log('error happened')
+      })
   }
 }
 </script>

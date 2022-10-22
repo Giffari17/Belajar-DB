@@ -25,26 +25,12 @@
 </template>
 
 <script>
+import httpClient from '@/api/api'
+import { isProxy, toRaw } from 'vue'
 export default {
   data () {
     return {
-      users: [
-        {
-          id: 1,
-          name: 'udin',
-          address: 'sleman'
-        },
-        {
-          id: 2,
-          name: 'udin1',
-          address: 'kaliurang'
-        },
-        {
-          id: 3,
-          name: 'udin2',
-          address: 'monjali'
-        }
-      ]
+      users: []
     }
   },
   methods: {
@@ -52,8 +38,32 @@ export default {
       this.$router.push(`/users/${id}`)
     },
     deleteUser (id) {
-      console.log(`Delete Feature for user id = ${id}`)
+      // Delete API
+      httpClient.delete(`/users/${id}`)
+        .then(_ => {
+          console.log(`Delete Feature for user id = ${id}`)
+        })
+        .catch(_ => {
+          console.log('error happened')
+        })
+      // Delete client data
+      let rawData = this.users
+
+      if (isProxy(rawData)) {
+        rawData = toRaw(rawData)
+      }
+      const finalData = rawData.filter(user => user.id !== id)
+      this.users = [...finalData]
     }
+  },
+  created () {
+    httpClient('/users')
+      .then(({ data }) => {
+        this.users = data
+      })
+      .catch(_ => {
+        console.log('error happened')
+      })
   }
 }
 </script>
@@ -61,7 +71,7 @@ export default {
 .container {
     margin: 100px;
     border: 1px solid black;
-    height: 600px;
+    height: 800px;
     width: 600px;
     display: flex;
     flex-direction: column;
