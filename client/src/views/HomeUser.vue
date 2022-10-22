@@ -39,7 +39,7 @@ export default {
     },
     deleteUser (id) {
       // Delete API
-      axios.delete(`/users/${id}`)
+      axios.delete(`http://localhost:5055/users/${id}`)
         .then(_ => {
           console.log(`Delete Feature for user id = ${id}`)
         })
