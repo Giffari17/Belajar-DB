@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import httpClient from '@/api/api'
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -32,7 +32,7 @@ export default {
     }
   },
   created () {
-    httpClient(`/users/${this.userId}`)
+    axios.get(`http://localhost:5055/users/${this.userId}`)
       .then(({ data }) => {
         this.user = data
       })

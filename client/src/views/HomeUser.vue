@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import httpClient from '@/api/api'
 import { isProxy, toRaw } from 'vue'
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -39,7 +39,7 @@ export default {
     },
     deleteUser (id) {
       // Delete API
-      httpClient.delete(`/users/${id}`)
+      axios.delete(`/users/${id}`)
         .then(_ => {
           console.log(`Delete Feature for user id = ${id}`)
         })
@@ -57,7 +57,7 @@ export default {
     }
   },
   created () {
-    httpClient('/users')
+    axios.get('http://localhost:5055/users')
       .then(({ data }) => {
         this.users = data
       })
