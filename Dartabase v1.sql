@@ -1,0 +1,1 @@
+SELECT * FROM radionuklidadb.elemen;
