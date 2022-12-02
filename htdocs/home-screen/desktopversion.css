@@ -1,0 +1,1195 @@
+.desktopversion-container {
+  min-height: 100vh;
+}
+.desktopversion-desktopversion {
+  width: 100%;
+  height: 2956px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktopversion-footer {
+  top: 2572px;
+  left: 0px;
+  width: 1180px;
+  display: flex;
+  padding: 38.10417175292969px 154.2604217529297px;
+  position: absolute;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktopversion-footer1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-footercolumns {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-bottom: 49.67753982543945px;
+}
+.desktopversion-frame-product {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 163.93588256835938px;
+  flex-direction: column;
+}
+.desktopversion-text {
+  height: auto;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 500;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.9032621383667px;
+  text-decoration: none;
+}
+.desktopversion-producttext {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text002 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 9.935508728027344px;
+  text-decoration: none;
+}
+.desktopversion-text004 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 9.935508728027344px;
+  text-decoration: none;
+}
+.desktopversion-text006 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 9.935508728027344px;
+  text-decoration: none;
+}
+.desktopversion-text008 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 9.935508728027344px;
+  text-decoration: none;
+}
+.desktopversion-text010 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 9.935508728027344px;
+  text-decoration: none;
+}
+.desktopversion-text012 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-explore {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 163.93588256835938px;
+  flex-direction: column;
+}
+.desktopversion-text014 {
+  height: auto;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 500;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.9032621383667px;
+  text-decoration: none;
+}
+.desktopversion-explorefields {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text016 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text018 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text020 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-community {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 163.93588256835938px;
+  flex-direction: column;
+}
+.desktopversion-text022 {
+  height: auto;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 500;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.9032621383667px;
+  text-decoration: none;
+}
+.desktopversion-communityfields {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text024 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text026 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text028 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-company {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text030 {
+  height: auto;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 500;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.9032621383667px;
+  text-decoration: none;
+}
+.desktopversion-companyfields {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text032 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text034 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text036 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 10.929059982299805px;
+  text-decoration: none;
+}
+.desktopversion-text038 {
+  color: var(--dl-color-default-gray);
+  height: auto;
+  opacity: 0.50;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 23.8452205657959px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-iconsocials {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+}
+.desktopversion-text040 {
+  color: var(--dl-color-default-dark);
+  height: auto;
+  font-size: 15.89681339263916px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 25.832321166992188px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-fifthblock {
+  top: 1991.25px;
+  left: 19.956174850463867px;
+  width: 1180px;
+  display: flex;
+  padding: 143.8125px 97.71875762939453px;
+  position: absolute;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktopversion-block {
+  width: 984.5625px;
+  height: 199.12501525878906px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+}
+.desktopversion-block1 {
+  width: 295.6145935058594px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 18.437501907348633px;
+  flex-direction: column;
+}
+.desktopversion-text042 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 76.64082336425781px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 87.58950805664062px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 15.328164100646973px;
+  text-decoration: none;
+}
+.desktopversion-text044 {
+  height: auto;
+  font-size: 17.517902374267578px;
+  align-self: auto;
+  font-style: Semi Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 21.897377014160156px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-text045 {
+  font-weight: 700;
+}
+.desktopversion-block2 {
+  width: 298.3802490234375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 18.437501907348633px;
+  flex-direction: column;
+}
+.desktopversion-text050 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 77.35784149169922px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 88.4089584350586px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 15.47156810760498px;
+  text-decoration: none;
+}
+.desktopversion-text052 {
+  width: 148px;
+  height: auto;
+  font-size: 17.681791305541992px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 22.10223960876465px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-text053 {
+  font-weight: 600;
+}
+.desktopversion-block3 {
+  width: 307.7525939941406px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text058 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 79.7877197265625px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 91.18597412109375px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 15.95754337310791px;
+  text-decoration: none;
+}
+.desktopversion-text060 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 18.237192153930664px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 22.796493530273438px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-text061 {
+  font-weight: 600;
+}
+.desktopversion-thridblock {
+  top: 1327.5001220703125px;
+  left: 19.956174850463867px;
+  width: 1170px;
+  display: flex;
+  padding: 46.09375px 51.625003814697266px;
+  position: absolute;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.desktopversion-heading {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-bottom: 64.53125px;
+  flex-direction: column;
+}
+.desktopversion-text066 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 46.7400016784668px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 60.88968276977539px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-blockwithcarts {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.desktopversion-cart {
+  width: 294.30010986328125px;
+  display: flex;
+  padding: 0 7.10379695892334px 0 0;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 98.43832397460938px;
+  flex-direction: column;
+}
+.desktopversion-image {
+  width: 203px;
+  height: 203px;
+  position: relative;
+  border-color: transparent;
+  margin-bottom: 14.20759391784668px;
+}
+.desktopversion-text071 {
+  height: auto;
+  font-size: 22.360000610351562px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 30.444841384887695px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.20759391784668px;
+  text-decoration: none;
+}
+.desktopversion-text073 {
+  color: var(--dl-color-default-gray);
+  width: 286px;
+  height: auto;
+  font-size: 16.237247467041016px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 24.35587501525879px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-cart1 {
+  width: 294.30010986328125px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 98.43832397460938px;
+  flex-direction: column;
+  justify-content: center;
+}
+.desktopversion-illustration {
+  width: 203px;
+  height: 203px;
+  position: relative;
+  border-color: transparent;
+  margin-bottom: 14.20759391784668px;
+}
+.desktopversion-text075 {
+  height: auto;
+  font-size: 22.360000610351562px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 30.444841384887695px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.20759391784668px;
+  text-decoration: none;
+}
+.desktopversion-text077 {
+  color: var(--dl-color-default-gray);
+  width: 275px;
+  height: auto;
+  font-size: 16.2372px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 24.3559px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-cart2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-illustration1 {
+  width: 203px;
+  height: 203px;
+  position: relative;
+  border-color: transparent;
+  margin-bottom: 14.20759391784668px;
+}
+.desktopversion-text078 {
+  height: auto;
+  font-size: 22.360000610351562px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 30.444841384887695px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 14.20759391784668px;
+  text-decoration: none;
+}
+.desktopversion-text080 {
+  color: var(--dl-color-default-gray);
+  width: 281px;
+  height: auto;
+  font-size: 16.237247467041016px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 24.35587501525879px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-secondblock {
+  top: 663.7500610351562px;
+  left: 19.956174850463867px;
+  width: 1065px;
+  display: flex;
+  padding: 79.28125px 94.03125762939453px;
+  position: absolute;
+  align-items: center;
+  border-color: transparent;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+.desktopversion-textcontent {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-right: 92.1875px;
+  flex-direction: column;
+}
+.desktopversion-bodytext {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-text082 {
+  width: 481px;
+  height: auto;
+  font-size: 59.72999954223633px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 71.68994903564453px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 21.50698471069336px;
+  text-decoration: none;
+}
+.desktopversion-text084 {
+  color: var(--dl-color-default-gray);
+  width: 436px;
+  height: auto;
+  font-size: 15.920000076293945px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 400;
+  line-height: 22.40311050415039px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-picturecart {
+  display: flex;
+  padding: 27.656251907348633px 0 0 0;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(225, 223, 255, 1);
+}
+.desktopversion-frame2 {
+  display: flex;
+  padding: 6.145833969116211px;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  margin-bottom: 33.802085876464844px;
+}
+.desktopversion-frame6 {
+  display: flex;
+  padding: 6.145833969116211px;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.desktopversion-intersect {
+  width: 190px;
+  height: 190px;
+  position: relative;
+}
+.desktopversion-bgbtncontent {
+  display: flex;
+  padding: 21.510417938232422px 58.38542175292969px;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  border-radius: 12.414284706115723px 12.414284706115723px 0 0;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-white);
+}
+.desktopversion-contentbtn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+}
+.desktopversion-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-bottom: 21.28162956237793px;
+  flex-direction: column;
+}
+.desktopversion-text086 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 24.600000381469727px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: SF UI Display;
+  font-weight: 500;
+  line-height: 31.03571319580078px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-btn {
+  display: flex;
+  padding: 13.301019668579102px 17.734691619873047px;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  border-radius: 6.207142353057861px;
+  justify-content: center;
+  background-color: var(--dl-color-accent-deeppurple);
+}
+.desktopversion-text088 {
+  color: var(--dl-color-gray-white);
+  height: auto;
+  font-size: 14.187753677368164px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 17.734691619873047px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-firstblockherosection {
+  top: 0px;
+  left: 19.956174850463867px;
+  width: 1180px;
+  height: 663.7500610351562px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.desktopversion-illustrations {
+  top: 55px;
+  left: 49.0438232421875px;
+  width: 655px;
+  height: 609px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.desktopversion-laptopillustration {
+  top: 59px;
+  right: 154px;
+  width: 456px;
+  height: 495px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktopversion-bloodreport {
+  top: 57px;
+  right: 60px;
+  width: 260px;
+  height: 261px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktopversion-content1 {
+  top: 203.4038543701172px;
+  left: 670.0018310546875px;
+  width: 460px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+}
+.desktopversion-headertext {
+  width: 460.2169494628906px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-bottom: 39.946502685546875px;
+  flex-direction: column;
+}
+.desktopversion-text090 {
+  width: 454px;
+  height: auto;
+  font-size: 58.255306243896484px;
+  align-self: auto;
+  font-style: Semibold;
+  text-align: left;
+  font-family: SF UI Display;
+  font-weight: 600;
+  line-height: 66.57749938964844px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 19.973251342773438px;
+  text-decoration: none;
+}
+.desktopversion-text092 {
+  color: var(--dl-color-default-gray);
+  width: 460px;
+  height: auto;
+  font-size: 19.973251342773438px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 24.966562271118164px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-subscription {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+}
+.desktopversion-field {
+  width: 208.05467224121094px;
+  display: flex;
+  padding: 14.147719383239746px 16.64437484741211px;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(166, 166, 171, 1);
+  border-style: solid;
+  border-width: 0.8322187662124634px;
+  margin-right: 12.483281135559082px;
+  border-radius: 5.825531482696533px;
+  flex-direction: column;
+}
+.desktopversion-field1 {
+  display: flex;
+  padding: 0.6145833730697632px 0;
+  position: relative;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+}
+.desktopversion-text094 {
+  color: var(--dl-color-default-lightgray);
+  height: auto;
+  font-size: 11px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 14.979937553405762px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-btn1 {
+  height: 45.77202606201172px;
+  display: flex;
+  padding: 12.483281135559082px 16.64437484741211px;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 5.825531482696533px;
+  background-color: var(--dl-color-accent-deeppurple);
+}
+.desktopversion-text096 {
+  color: var(--dl-color-gray-white);
+  height: auto;
+  font-size: 14.979937553405762px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 16.64437484741211px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-header {
+  top: 5.531290531158447px;
+  left: 233.5416259765625px;
+  width: 713px;
+  display: flex;
+  padding: 0 15.364584922790527px;
+  position: absolute;
+  align-items: center;
+  border-color: transparent;
+}
+.desktopversion-menu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  margin-right: 374.28125px;
+}
+.desktopversion-link-dropdown {
+  height: 19.00738525390625px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 27.153411865234375px;
+  border-radius: 7.240909576416016px;
+}
+.desktopversion-text098 {
+  height: auto;
+  font-size: 14.481819152832031px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 16.29204559326172px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-link-menu {
+  height: 19.00738525390625px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 27.153411865234375px;
+}
+.desktopversion-text100 {
+  height: auto;
+  font-size: 14.481819152832031px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 16.29204559326172px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-link-menu1 {
+  height: 19.00738525390625px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.desktopversion-text102 {
+  height: auto;
+  font-size: 14.481819152832031px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 16.29204559326172px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktopversion-button {
+  height: 49.781253814697266px;
+  display: flex;
+  padding: 13.576705932617188px 18.10227394104004px;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 6.335795879364014px;
+  justify-content: center;
+}
+.desktopversion-text104 {
+  color: rgba(91, 81, 222, 1);
+  height: auto;
+  font-size: 16.29204559326172px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Lato;
+  font-weight: 500;
+  line-height: 18.10227394104004px;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
