@@ -30,7 +30,7 @@ export function Faq() {
   };
 
   return (
-    <div className="faq mx-auto my-0 p-8 text-center md:my-20">
+    <div className="faq mx-auto my-0 max-w-xs p-10 text-center md:my-20">
       <h1 className="mb-16 text-4xl sm:text-6xl md:mb-20">FAQ</h1>
       <Fragment>
         <Accordion
@@ -67,7 +67,7 @@ export function Faq() {
           icon={<Icon id={3} open={open} />}
         >
           <AccordionHeader onClick={() => handleOpen(3)}>
-            What is my products broken in shipping ?
+            Is this products safe ?
           </AccordionHeader>
           <AccordionBody className="my-6">
             We're not always in the position that we want to be at. We're
