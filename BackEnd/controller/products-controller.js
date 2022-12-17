@@ -1,27 +1,89 @@
+const Product = require('../models/productModel');
+
 module.exports = {
-  getAllProducts: (req, res) => {
-    res.json({
-      msg: 'success get all products',
-    });
+  getAllProducts: async (req, res) => {
+    try {
+      const allProducts = await Product.find();
+      res.json({
+        msg: 'success get all Product',
+        data: allProducts,
+      });
+    } catch (err) {
+      res.json({
+        error: `${err.message}`,
+      });
+    }
   },
-  getProductById: (req, res) => {
-    res.json({
-      msg: 'success get product by id',
-    });
+  getProductById: async (req, res) => {
+    try {
+      const id = req.params.id;
+      let data = '';
+
+      const productData = await Product.findById(id).then((result) => {
+        data = result;
+
+        return data;
+      });
+
+      res.json({
+        msg: 'success get product by id',
+        data,
+      });
+    } catch (err) {
+      res.json({
+        error: `${err.message}`,
+      });
+    }
   },
-  addProduct: (req, res) => {
-    res.json({
-      msg: 'success add product',
-    });
+  addProduct: async (req, res) => {
+    try {
+      const productData = req.body;
+
+      const data = new Product(productData);
+
+      data.save();
+
+      res.json({
+        msg: 'success add product',
+        data: productData,
+      });
+    } catch (err) {
+      res.json({
+        error: `${err.message}`,
+      });
+    }
   },
-  deleteProductById: (req, res) => {
-    res.json({
-      msg: 'success delete product',
-    });
+  deleteProductById: async (req, res) => {
+    try {
+      const id = req.params.id;
+
+      await Product.findByIdAndDelete(id);
+
+      const dataExisting = await Product.find();
+      res.json({
+        msg: 'success delete product',
+        data: dataExisting,
+      });
+    } catch (err) {
+      res.json({
+        error: `${err.message}`,
+      });
+    }
   },
-  editProduct: (req, res) => {
-    res.json({
-      msg: 'sucess edit products',
-    });
+  editProduct: async (req, res) => {
+    try {
+      const id = req.params.id;
+      var conditions = { _id: id };
+
+      await Product.updateOne(conditions, req.body);
+
+      res.json({
+        msg: 'sucess edit Product',
+      });
+    } catch (err) {
+      res.json({
+        error: `${err.message}`,
+      });
+    }
   },
 };
