@@ -3,28 +3,59 @@ import axios from 'axios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { Button } from '@material-tailwind/react';
 import * as Yup from 'yup';
-import ProductsCard from '../Components/Products/ProductsCards';
-import { redirect } from 'react-router-dom';
+import { ProductsCard } from '../Components/Products/ProductsCards';
+import { Input } from '@material-tailwind/react';
+import { Dna } from 'react-loader-spinner';
 
 const Products = () => {
   const [display, setDisplay] = useState(false);
   const [products, setProducts] = useState([]);
+  const [productSearchData, setProductSearchData] = useState([]);
+  const [edit, setEdit] = useState(false);
+  const [id, setId] = useState('');
+  const [cardValue, setCardValue] = useState('');
+  const [search, setSearch] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const call = () => {
       axios
-        .get('https://sbd-kelompok-2-production.up.railway.app/product')
+        .get('https://sbd-kelompok-2.vercel.app/product')
         .then((result) => {
-          setProducts(result.data.data);
-        });
+          if (!search) {
+            setProducts(result.data.data);
+          }
+        })
+        .then(() => setIsLoading(true));
     };
 
     call();
   }, [products]);
 
   const productDisplay = () => {
+    const changeInput = (e) => {
+      const value = e.target.value;
+      setSearch(value);
+
+      const productSearch = products.filter((product) => {
+        return product.title.toLowerCase().includes(search.toLowerCase());
+      });
+
+      setProducts(productSearch);
+    };
+
     return (
       <div className="mx-auto text-center">
+        <div className="mx-auto my-8 w-72">
+          <Input
+            className="my-8 pt-8"
+            variant="outlined"
+            placeholder="search products.."
+            onChange={changeInput}
+          />
+          <h1>{search ? `you search : ${search}` : ''}</h1>
+        </div>
+
         <Button
           color="blue"
           className="my-8 w-40 text-black"
@@ -34,15 +65,20 @@ const Products = () => {
         >
           Add Product
         </Button>
-
-        <ProductsCard propsData={products} />
+        <ProductsCard
+          setDisplay={setDisplay}
+          setEdit={setEdit}
+          propsData={products}
+          setId={setId}
+          setCardValue={setCardValue}
+        />
       </div>
     );
   };
 
   const addProduct = () => {
     const initialValues = {
-      name: '',
+      title: '',
       description: '',
       image: '',
       left: '',
@@ -50,17 +86,31 @@ const Products = () => {
     };
 
     const onSubmit = (data) => {
-      axios
-        .post('https://sbd-kelompok-2-production.up.railway.app/product', data)
-        .then((response) => {
-          setProducts((products) => [...products, response.data]);
-        });
+      if (id === '') {
+        axios
+          .post('https://sbd-kelompok-2.vercel.app/product', data)
+          .then((response) => {
+            setProducts((products) => [...products, response.data]);
+          });
 
-      Swal.fire({
-        icon: 'success',
-        title: 'Success!',
-        text: 'Berhasil input product',
-      });
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Berhasil input product',
+        });
+      } else {
+        axios
+          .patch(`https://sbd-kelompok-2.vercel.app/product/${id}`, data)
+          .then((response) => {
+            setProducts((products) => [...products, response.data]);
+          });
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Berhasil edit product',
+        });
+      }
 
       setDisplay((display) => !display);
     };
@@ -82,7 +132,10 @@ const Products = () => {
           color="blue"
           className="my-8 text-black"
           onClick={() => {
-            setDisplay((display) => !display);
+            setDisplay(false);
+            setEdit(false);
+            setId('');
+            setCardValue('');
           }}
         >
           Back To Product
@@ -99,16 +152,14 @@ const Products = () => {
               name="title"
               component="span"
             />
-
-            <label>Product Name : </label>
+            <label>Product Name :</label>
             <Field
               id="inputProduct"
               name="title"
-              placeholder="product name..."
-              autoComplete="off"
+              placeholder={cardValue ? cardValue.title : 'product name...'}
+              autoComplete="on"
               className="m-1 mx-auto mb-5 w-4/5 rounded-2xl border-[1px] border-blue-400 px-2 py-3 text-black"
             />
-
             <ErrorMessage
               className="text-bold mb-5 text-red-600"
               name="description"
@@ -118,11 +169,12 @@ const Products = () => {
             <Field
               id="inputDescription"
               name="description"
-              placeholder="product description..."
-              autoComplete="off"
+              placeholder={
+                cardValue ? cardValue.description : 'product description...'
+              }
+              autoComplete="on"
               className="m-1 mx-auto mb-5 w-4/5 rounded-2xl border-[1px] border-blue-400 px-2 py-3 text-black"
             />
-
             <ErrorMessage
               className="text-bold mb-5 text-red-600"
               name="left"
@@ -132,11 +184,10 @@ const Products = () => {
             <Field
               id="inputProduct"
               name="left"
-              placeholder="price.."
-              autoComplete="off"
+              placeholder={cardValue ? cardValue.left : 'price..'}
+              autoComplete="on"
               className="m-1 mx-auto mb-5 w-4/5 rounded-2xl border-[1px] border-blue-400 px-2 py-3 text-black"
             />
-
             <ErrorMessage
               className="text-bold mb-5 text-red-600"
               name="right"
@@ -146,11 +197,10 @@ const Products = () => {
             <Field
               id="inputPlace"
               name="right"
-              placeholder="price.."
-              autoComplete="off"
+              placeholder={cardValue ? cardValue.right : "product's place.."}
+              autoComplete="on"
               className="m-1 mx-auto mb-5 w-4/5 rounded-2xl border-[1px] border-blue-400 px-2 py-3 text-black"
             />
-
             <ErrorMessage
               className="text-bold mb-5 text-red-600"
               name="image"
@@ -160,8 +210,8 @@ const Products = () => {
             <Field
               id="inputProduct"
               name="image"
-              placeholder="img url..."
-              autoComplete="off"
+              placeholder={cardValue ? cardValue.image : 'img url...'}
+              autoComplete="on"
               className="m-1 mx-auto mb-5 w-4/5 rounded-2xl border-[1px] border-blue-400 px-2 py-3 text-black"
             />
 
@@ -171,7 +221,7 @@ const Products = () => {
               className="m-1 mx-auto mb-5 mt-5 w-4/5 rounded-2xl border-[1px] bg-blue-400 px-2 py-3 text-black"
               type="submit"
             >
-              Add Product
+              {edit ? 'Edit Product' : 'Add Product'}
             </Button>
           </Form>
         </Formik>
@@ -179,7 +229,22 @@ const Products = () => {
     );
   };
 
-  return <div>{!display ? productDisplay() : addProduct()}</div>;
+  const loading = () => {
+    return (
+      <div className="tengah mx-auto my-8 text-center">
+        <div className="tengah mx-auto my-8">
+          <Dna className="tengah mx-auto my-8 bg-black" />
+        </div>
+        <h1 className="tengah mx-auto my-8">Loading...</h1>
+      </div>
+    );
+  };
+
+  return (
+    <div>
+      {!isLoading ? loading() : !display ? productDisplay() : addProduct()}
+    </div>
+  );
 };
 
 export { Products };

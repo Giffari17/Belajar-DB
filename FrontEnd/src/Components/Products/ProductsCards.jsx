@@ -12,16 +12,15 @@ function ProductsCard(props) {
   const products = props.propsData;
 
   const handleEdit = (card) => {
-    Swal.fire({
-      icon: 'error',
-      title: 'cannot edit!',
-      text: 'edit feature coming',
-    });
+    props.setEdit(true);
+    props.setDisplay(true);
+    props.setId(card._id);
+    props.setCardValue(card);
   };
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://sbd-kelompok-2-production.up.railway.app/product/${id}`)
+      .delete(`https://sbd-kelompok-2.vercel.app/product/${id}`)
       .then((response) => {
         setProducts([response.data]);
       });
@@ -92,4 +91,4 @@ function ProductsCard(props) {
   );
 }
 
-export default ProductsCard;
+export { ProductsCard };
